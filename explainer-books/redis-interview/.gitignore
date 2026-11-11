@@ -1,0 +1,3 @@
+// add _bmad/ and _bmad_output/ to .gitignore
+_bmad/
+_bmad_output/

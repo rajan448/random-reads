@@ -1,0 +1,11 @@
+.DS_Store
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+_site/
+vendor/
+_bmad/render/
+__pycache__/
+_bmad/
+_bmad_output/

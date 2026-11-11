@@ -1,0 +1,29 @@
+title: Explainer Books
+description: Short, beginner-friendly guides to technical topics.
+theme: jekyll-theme-minimal
+
+# GitHub Pages supplies url and baseurl from the repository metadata.
+# Keep them unset so project and username.github.io repositories both work.
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: explainer-books
+    values:
+      layout: book
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - _bmad
+  - _bmad-output
+

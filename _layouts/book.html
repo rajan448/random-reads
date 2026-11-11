@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<nav aria-label="Book navigation">
+  <a href="{{ '/' | relative_url }}">&larr; Back to all books</a>
+  {% assign overview = site.pages | where: "dir", page.dir | where: "name", "00-overview.md" | first %}
+  {% if overview and overview.url != page.url %}
+    <span aria-hidden="true">&middot;</span>
+    <a href="{{ overview.url | relative_url }}">Book overview</a>
+  {% endif %}
+</nav>
+
+{{ content }}
+
